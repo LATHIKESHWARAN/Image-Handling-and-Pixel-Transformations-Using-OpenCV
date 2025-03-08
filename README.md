@@ -33,7 +33,7 @@ Split the image (boy.jpg) into B, G, R components and display the channels
 - **Name:** LATHIKESHWARAN J
 - **Register Number:** 212222230072
 
-### Ex. No. 01
+  ### Ex. No. 01
 
 #### 1. Read the image ('Eagle_in_Flight.jpg') using OpenCV imread() as a grayscale image.
 ```python
@@ -52,7 +52,7 @@ img.shape
 #### 3. Display the image using matplotlib imshow().
 ```python
 img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2GRAY)
-plt.imshow(img_gray,cmap='gray')
+plt.imshow(img_gray,cmap='grey')
 plt.show()
 ```
 
@@ -77,7 +77,7 @@ img.shape
 
 #### 7. Crop the image to extract any specific (Eagle alone) object from the image.
 ```python
-cr = img_rgb[200:400,200:400] 
+cr = img_rgb[50:425,200:550] 
 plt.imshow(cr)
 plt.title("Cropped Region")
 plt.axis("off")
@@ -201,7 +201,7 @@ plt.show()
 ```
 #### 23. Merged the H, S, V, displays along with original image.
 ```python
-merged_hsv = cv2.cvtColor(cv2.merge([h, s, v]), cv2.COLOR_HSV2RGB)
+merged_hsv = cv2.cvtColor(cv2.merge([h, s, v]), cv2.COLOR_HSV2BGR)
 combined = np.concatenate((img_rgb, merged_hsv), axis=1)
 plt.figure(figsize=(10, 5))
 plt.imshow(combined)
@@ -214,53 +214,58 @@ plt.show()
 - ### **i)** Read and Display an Image.  
    1.Read 'Eagle_in_Flight.jpg' as grayscale and display:
 
-  ![image](https://github.com/user-attachments/assets/71268834-5910-4b4f-8546-7bdb7494e24a)
+  ![image](https://github.com/user-attachments/assets/7a0aa73c-425d-4d02-8a14-a2e5e6125c51)
 
 
   2.Save image as PNG and display:
 
-![image](https://github.com/user-attachments/assets/4b2538dd-22bf-4d2b-9dda-8210c8bb3758)
+  ![image](https://github.com/user-attachments/assets/a5ac66f4-e1a5-4833-a0d0-c202057df417)
+
 
   3.Cropped image:
 
-![image](https://github.com/user-attachments/assets/d4e8c8b5-4d21-487b-b2ab-ae6a498e4ced)
+  ![image](https://github.com/user-attachments/assets/055792b4-ac3c-4f7b-a76c-9f089112c840)
+
 
   4.Resize and flip Horizontally:
 
-![image](https://github.com/user-attachments/assets/cf153b5d-2b0a-4c12-942c-312da69eece9)
+![image](https://github.com/user-attachments/assets/96e86426-66d7-489f-be23-a142fafed783)
 
   5.Read 'Apollo-11-launch.jpg' and  Display the final annotated image:
 
-![image](https://github.com/user-attachments/assets/86014707-2388-4401-95d9-3f50ed4c5b87)
+  ![image](https://github.com/user-attachments/assets/95ca09b2-bb69-4b9a-902c-e84b02be45e8)
+
 
 - ### **ii)** Adjust Image Brightness.
 
 1.Create brighter and darker images and display:
 
-![image](https://github.com/user-attachments/assets/fe065a32-e2ec-42e1-9d63-c3108f7975e4)
+![image](https://github.com/user-attachments/assets/b092a044-caca-4e2d-abe6-45b2e1de8ddf)
 
 - ### **iii)** Modify Image Contrast.  
 1. Modify contrast using scaling factors 1.1 and 1.2:
 
-![image](https://github.com/user-attachments/assets/7fa65a3b-cd38-48e0-9c2f-11a5a0aab5ca)
+![image](https://github.com/user-attachments/assets/52cf0e60-b786-4173-9c94-deccf59da25d)
+
 
 - ### **iv)** Generate Third Image Using Bitwise Operations.
 
 1.Split 'Boy.jpg' into B, G, R components and display:
 
-![image](https://github.com/user-attachments/assets/c82c7908-c983-4d46-baa7-6c73b2d6d53e)
+![image](https://github.com/user-attachments/assets/663f2c76-d281-4427-b5a5-e8695da16fa7)
+
 
 2.Merge the R, G, B channels and display:
 
-![image](https://github.com/user-attachments/assets/ea2886be-57a5-4b85-b092-1c2e731bc980)
+![image](https://github.com/user-attachments/assets/12fc4958-afaf-4178-9b7c-a8cbcde9669b)
 
 3.Split the image into H, S, V components and display:
 
-![image](https://github.com/user-attachments/assets/7d7b1368-40e5-4045-a7ba-bb46c8f6b618)
+![image](https://github.com/user-attachments/assets/6e55c163-01cf-4742-bd78-fc79b4ede809)
 
 4.Merge the H, S, V channels and display:
 
-![image](https://github.com/user-attachments/assets/511c34e2-287c-46a3-b7b8-f830fab93544)
+![image](https://github.com/user-attachments/assets/efc2fa31-893f-44cb-9ed8-f23a96e0e2fe)
 
 ## Result:
 Thus, the images were read, displayed, brightness and contrast adjustments were made, and bitwise operations were performed successfully using the Python program.
